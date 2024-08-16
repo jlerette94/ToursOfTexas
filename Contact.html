@@ -1,0 +1,69 @@
+<!doctype HTML>
+<html lang = "EN">
+    <head>
+        <meta charset = "utf-8">
+        <title>D277 Project</title>
+        <link rel="stylesheet" href="contactStyle.css">
+    </head>
+
+<body> 
+    
+    <script src = "mainFunctions.js"></script>
+
+    <header>
+        <a href="Home.html" id="logoLink">
+            <img class="headerLogo" src="Pictures/texasflag.jpg" alt="Texas Flag">
+        </a>
+        <div class="headSpacer"></div>
+        <div class="headerText">
+            <h1 class="mainHeading">Contact Us</h1>
+            <h3 id="homeHeading">We are here to answer any questions</h3>
+        </div>
+    </header>
+
+<div class="cBody">
+<!--
+    <nav>
+        <input class="navBtn" id="nav1" type="button" value="Home" onclick="navBtn('Home.html');"/>
+        <input class="navBtn" id="nav2" type="button" value="Austin" onclick="navBtn('Cities/Austin.html');" />
+        <input class="navBtn" id="nav3" type="button" value="Dallas" onclick="navBtn('Cities/Dallas.html');" />
+        <input class="navBtn" id="nav4" type="button" value="Houston" onclick="navBtn('Cities/Houston.html');" />
+        <input class="navBtn" id="nav5" type="button" value="San Antonio" onclick="navBtn('Cities/SanAntonio.html');" />
+    </nav>
+-->
+    <section>
+        <h2 class="paraHeader"><strong>Howdy!</strong></h2>
+        <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST" autocomplete="off" id="contactForm">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+            <label for="email1">Email Address:</label><br>
+            <input type="text" id="email1" name="email1" placeholder="default@example.com" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
+            <label for="email2">Re-Enter Email Address:</label><br>
+            <input type="text" id="email2" name="email2" placeholder="default@example.com" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
+            <label for="msg">Let us know your thoughts</label><br>
+            <input type="text" id="msg" name="msg" placeholder="Type your message to us....."><br><br>
+            <div id="subFrame">
+                <input type="button" id="subBtn" name="subBtn" value="Submit" onclick="emailCheck2();">
+            </div>
+        </form>
+    </section>
+<!--
+    <aside>
+
+    </aside>
+-->
+</div>
+
+    <footer>
+        <div class="footerFrame">
+            <div class="footerItem">
+                <input class="closeBtn" type="button" value="Return" onclick="closeWin();"/>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

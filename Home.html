@@ -1,0 +1,115 @@
+<!doctype HTML>
+<html lang = "EN">
+    <head>
+        <meta charset = "utf-8">
+        <title>D277 Project</title>
+        <link rel="stylesheet" href="mainStyle.css">
+    </head>
+
+<body> 
+    
+    <script src = "mainFunctions.js"></script>
+
+    <header>
+        <a href="Home.html" id="logoLink">
+            <img class="headerLogo" src="Pictures/texasflag.jpg" alt="Texas Flag">
+        </a>
+        <div class="headSpacer"></div>
+        <div class="headerText">
+            <h1 class="mainHeading">Tours of Texas</h1>
+            <h3 id="homeHeading">See the lone star state and all of it's unique quirks</h3>
+            <p class="headerSmallText"><i>"You May All Go to Hell and I Will Go to Texas”</i> — Davy Crockett</p>
+        </div>
+    </header>
+
+<div class="cBody">
+
+    <nav>
+        <input class="navBtn_curPage" id="nav1" type="button" value="Home" />
+        <input class="navBtn" id="nav2" type="button" value="Austin" onclick="navBtn('Cities/Austin.html');" />
+        <input class="navBtn" id="nav3" type="button" value="Dallas" onclick="navBtn('Cities/Dallas.html');" />
+        <input class="navBtn" id="nav4" type="button" value="Houston" onclick="navBtn('Cities/Houston.html');" />
+        <input class="navBtn" id="nav5" type="button" value="San Antonio" onclick="navBtn('Cities/SanAntonio.html');" />
+        <input class="navBtn" id="nav6" type="button" value="Contact Us" onclick="openContact();" />
+    </nav>
+
+    <section>
+        <h2 class="paraHeader"><strong>Howdy!</strong></h2>
+        <p class="mainText">
+            Welcome to the Lone Star state!
+        </p>
+        <p class="mainText">
+            Texas is a diverse and vibrant state offering a wide range of experiences for travelers.
+             The state's major cities each have their unique charm. Austin is renowned for its live music scene,
+              artistic vibe, and the impressive Texas State Capitol, while Dallas boasts modern architecture,
+               a rich arts scene, and attractions like the Sixth Floor Museum at Dealey Plaza.
+                Houston, with its sprawling size, is home to the Space Center Houston,
+                 the Houston Museum of Natural Science, and a dynamic culinary landscape. San Antonio,
+             famous for its historic significance, features the iconic Alamo and the picturesque San Antonio River Walk.
+        </p> 
+        <img class="mainPara_img" src="Pictures/bigTex.jpg">
+        <p class="mainText">
+            For nature enthusiasts, Texas offers breathtaking landscapes. Big Bend National Park,
+             situated along the Mexico border, provides stunning desert vistas, dramatic canyons,
+              and the winding Rio Grande, ideal for hiking and stargazing. Guadalupe Mountains National Park,
+               with its rugged peaks and diverse flora, invites adventurers to explore trails leading to
+                Guadalupe Peak, the state's highest point.
+                 Padre Island National Seashore offers pristine beaches and opportunities for birdwatching and fishing.    
+        </p>    
+        <p class="mainText">
+            Texas is also known for its lively events and festivals.
+             South by Southwest (SXSW) in Austin is a must-visit for music and film enthusiasts,
+              while Houston's Livestock Show and Rodeo offers a classic rodeo experience with
+               live music and carnival attractions. The State Fair of Texas in Dallas features traditional
+                fair elements, including rides, games, and an array of unique foods.
+        </p>    
+        <p class="mainText">
+            
+        </p>
+        </section>
+
+    <aside>
+        <video class="asideVid" controls loop autoplay>
+            <source src="Pictures/Texas_Flag_vid.mp4" type="video/mp4">
+        </video>
+        <div class="rhText">
+            <ol id="rhList">
+                <li>Visit the grand prairies of central Texas!
+                    <br>
+                    <img class="asidePicture" src="Pictures/BullNField.jpg">
+                </li>
+                <li>Fish in the Gulf Coast!
+                    <br>
+                    <img class="asidePicture" src="Pictures/DeepSeaFishing.jpg">
+                </li>
+                <li>See the stars in the hill country!
+                    <br>
+                    <img class="asidePicture" src="Pictures/BidBend_Stars.jpg">
+                </li>
+                <li>Enjoy the best barbeque in the country!
+                    <br>
+                    <img class="asidePicture" src="Pictures/Brisket.jpg">
+                </li>
+            </ol>
+        </div>
+    </aside>
+
+</div>
+
+    <footer>
+        <div class="footerFrame">
+            <div class="footerItem">
+                <a class="btmLink" href="https://www.gregabbott.com/" target="_blank">Like us on Facebook</a>
+            </div>
+            <div class="footerItem">
+                <a class="btmLink" id="twitterLink" href="https://mothersagainstgregabbott.com/" target="_blank">Follow us on X</a>
+            </div>
+            <div class="footerItem">
+                <a class="btmLink" id="contactLink" href="#.html" onclick="openContact();">Contact Us!</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+/*Variables*/
+
+:root{
+    --pCol1: #F7FBFD;
+    --pCol2: #08053B;
+	--pCol3: #C90405;
+	--pCol4: #E3EEEF;
+    --sCol1: #BFBFBF;
+    --sCol2: #7C7C7C;
+	--fCol1: #050505;
+	--fCol2: #F7FBFD;
+    --fontFam: Arial, Helvetica, sans-serif;
+    --fs_lx:3vw;
+    --fs_l:2vw;
+    --fs_m:1.5vw;
+    --fs_s:1vw;
+    --fs_xs:0.7vw;
+	--lhBackground: linear-gradient(75deg, var(--pCol3), var(--pCol1),var(--pCol1),var(--pCol1), var(--pCol2));
+	--ftBck: linear-gradient(0deg, var(--pCol4), var(--pCol1));
+
+}
+
+/* Page layout */
+
+body{
+    display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	width:100%;
+	height:100%;
+	background-color:var(--pCol1);
+}
+header{
+	height:20%;
+	width:100%;
+	font-family:var(--fontFam);
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	color: var(--fCol1);
+	max-height: 200px;
+}
+
+div.cBody{
+	height:70%;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:nowrap ;
+}
+
+section{
+	width:100%;
+	height:70%;
+	font-family:var(--fontFam);
+}
+
+
+footer{
+	height:10%;
+	width:100%;
+	font-family:var(--fontFam);
+	background-color:var(--pCol4);
+	background-image: url(Pictures/blueBonnet.png);
+	background-position: left bottom;
+	background-repeat:repeat-x;
+	background-size: 5vw;
+	position:relative;
+	top:5vh;
+}
+
+/* Header style */
+
+#logoLink{
+	width:20%;
+	height:30%;
+}
+
+img.headerLogo{
+	width:100%;
+	height:100%;
+}
+
+div.headSpacer{
+	width:5%;
+}
+div.headerText{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 80%;
+}
+
+h1.mainHeading{
+	font-size:var(--fs_lx);
+	color:var(--pCol2);
+	height:15%;
+	width:100%;
+}
+
+#homeHeading{
+	height:10%;
+	color:var(--pCol2);
+	font-size: var(--fs_m);
+	position:relative;
+	top:-10%;
+	left:2.5%;
+	width:100%;
+}
+
+p.headerSmallText{
+	font-size:var(--fs_xs);
+	color:var(--pCol3);
+	height:5%;
+	position:relative;
+	top:-20%;
+	left:5%;
+	width:100%;
+}
+
+/* Footer Style */
+
+div.footerFrame{
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+div.footerItem{
+	width:15%;
+	margin-bottom: 3%;
+	margin-top:1%;
+	margin-left:2.5%;
+	margin-right:2.5%;
+	color:var(--pCol3);
+	font-weight: bold;
+	font-size: var(--fs_s);
+	background-color: var(--pCol1);
+	border-style: double;
+	border-radius: 10px;
+	padding-left: 2vw;
+}
+
+input.closeBtn{
+	background-color: var(--pCol1);
+	color:var(--pCol2);
+	border-style: none;
+	position: relative;
+	left:10%;
+}
+
+input.closeBtn:hover{
+	cursor: pointer;
+}
+
+
+/*main Style*/
+
+p.mainText{
+	font-size: var(--fs_m);
+	color:var(--pCol2);
+}
+
+img.mainPara_img{
+	float: left;
+	width:40%;
+	height:20%;
+}
+
+h2.paraHeader{
+	font-size:var(--fs_l);
+	color:var(--pCol3);
+	text-shadow: 0.1vw  0.1vh var(--pCol2);
+}
+
+input[type=text]{
+	width:80%;
+}
+
+#subBtn{
+	color:var(--pCol2);
+	background-color: var(--pCol1);
+}
+
+#msg{
+	height:20vh;
+}
